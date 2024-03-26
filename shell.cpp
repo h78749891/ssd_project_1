@@ -123,8 +123,8 @@ bool solution() {
 
 
     //string ssd_command = "";
-    string ssd_command = "C:\\Users\\711-03\\Desktop\\ojt\\";
-    string read_file = "C:\\Users\\711-03\\Desktop\\ojt\\result.txt";
+    string ssd_command = ".\\";
+    string read_file = ".\\result.txt";
     //string read_file = "result.txt";
     DataSet::setNowFuncName("");
     DataSet::setNowMessage("");
@@ -174,7 +174,7 @@ bool solution() {
 
 int main() {
     command_init();
-    while (DataSet::getExitFlag) {
+    while (DataSet::getExitFlag()) {
         string command;
         getline(cin, command);
         istringstream iss(command);
